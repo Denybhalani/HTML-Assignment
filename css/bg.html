@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+   .background-attachment{
+        border: 10px dotted;  
+        height: 300px;
+        background:url(./birthday.png);
+        background-attachment: fixed;     
+   }
+   .background-color{
+      border: 10px dotted;
+      height: 300px;
+      background-color: blue;
+
+   }
+   .background-image{
+
+       border: 10px dotted;
+       height: 300px;
+       background-image: url(./amazon_home_20210412.jpg);
+   }
+    .background-clip{
+        border: 10px dotted;
+        height: 300px;
+        background:url(./amazon_home_20210412.jpg);
+        background-clip: border-box;
+        background-clip: content-box;
+        padding: 20px;
+    }
+    .background-origin{
+        border: 10px dotted;
+        height: 300px;
+        background:url(./amazon_home_20210412.jpg);
+        background-clip: border-box;
+        background-clip: content-box;
+        padding: 20px;
+    }
+    .background-position{
+        border: 10px dotted;
+        height: 300px;
+        background:url(./amazon_home_20210412.jpg);
+        background-attachment: fixed;
+        background-position: 20% 20%;
+    }
+    .background-repeat{
+        border: 10px dotted;
+        height: 300px;
+        background:url(./amazon_home_20210412.jpg);
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+    .background-size{
+        border: 10px dotted;
+        height: 300px;
+        background:url(./amazon_home_20210412.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: 20% 20%;
+    }
+    .background-shorthand{
+        border: 10px dotted;
+        height: 300px;
+        background:url(./amazon_home_20210412.jpg);
+        /* background-attachment: fixed;
+        background-size: cover;
+        background-position: 20% 20%; */
+    }
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li> background-attachment</li>
+        <li> backgroung-clip</li>
+        <li> background-color</li>
+        <li> background-image</li>
+        <li> background-origin</li>
+        <li> background-position</li>
+        <li> background-repeat</li>
+        <li> background-size</li>
+    </ul>
+<div class="background-attachment"></div>
+<div class="background-color">background-color</div>
+<div class="background-image">background-image</div>
+<div class="background-clip">background-clip</div>
+<div class="background-origin">background-origin</div>
+<div class="background-position">background-position</div>
+<div class="background-repeat">background-repeat</div>
+<div class="background-size">background-size</div>
+<div class="background-shorthand">background-shorthand</div>
+</body>
+</html>
