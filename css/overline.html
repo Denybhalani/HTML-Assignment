@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #::before{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+          body,html{
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+          }
+          nav{
+            width: 650px;
+            height: 50px;
+            min-width: 400px;
+            display: flex;
+            /* align-items: center; */
+            /* justify-content: space-around; */
+            margin: auto;
+            
+          }
+          nav ul{
+            list-style-type: none;
+            display: flex;
+          }
+          nav ul li{
+            font-size: 20px;
+            padding: 0px 17px;
+            letter-spacing: 2px;
+          }
+          nav ul li a{
+            text-decoration: none;
+            color: white;
+            /* text-transform:uppercase; */
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            position: relative;
+            font-size: 18px;
+            letter-spacing: 0.5px;
+            padding: 0 10px;
+          }
+          nav ul li ::before{
+            content:"" ;
+            width: 100%;
+            height: 3px;    
+            background: green;
+            position: absolute;
+            transition: 1s;
+            
+          }
+          nav ul li a::before{
+            right: 0;
+            top: -10px;
+            
+          }
+          nav ul li a:hover::before{
+            width: 15%;
+            color:#ffffff;
+            transform: translate(20%);
+          }
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
+
+</body>
+</html>
