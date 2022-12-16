@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: blue;
+            font-size: 100px;
+            line-height: 0.54;
+        }
+        .space{
+            color: red;
+            opacity:0;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var m, x=5;
+        for(i=x;i>=1;i--){
+            for(j=1;j<=i;j++){
+                document.write("<span class='space'>*</span>")
+            }
+            document.write("*");
+
+        for(let k =1; k<=x-i; k++){
+             document.write("<span class='space'>*</span>")
+        }
+        for(let k =2; k<=x-i; k++){
+             document.write("<span class='space'>*</span>")
+        }
+        if(i!=x){
+            document.write("*");
+        }
+            document.write("<br>")
+        }
+        m = (x*2)+1;
+
+        for(i=1; i<=m; i++)
+        document.write("*");
+    </script>
+</body>
+</html>
